@@ -1,0 +1,19 @@
+{
+  "name": "ihsanprojects-website",
+  "version": "1.0.0",
+  "description": "Offizielle Website der Initiative für Gesundheit und Bildung e.V. (Ihsanprojects)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "ngo",
+    "ihsanprojects",
+    "senegal",
+    "gesundheitsversorgung"
+  ],
+  "author": "teamxmarketing",
+  "license": "UNLICENSED",
+  "private": true
+}
