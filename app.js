@@ -1,7 +1,7 @@
 // Ihsanprojects – Frontend Interactions & Video Management
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Ensure Video Autoplays Muted in Header
+  // 1. Ensure Video Autoplays Muted in Header (Opening Loop)
   const heroVideo = document.getElementById('heroVideo');
   if (heroVideo) {
     heroVideo.muted = true;
@@ -19,18 +19,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 2. Mobile Navigation Toggle
+  // 2. Mobile Navigation Toggle with Fullscreen Blur Overlay
   const mobileToggle = document.getElementById('mobileToggle');
-  const mainNav = document.getElementById('mainNav');
-  if (mobileToggle && mainNav) {
+  const mobileOverlay = document.getElementById('mobileOverlay');
+  if (mobileToggle && mobileOverlay) {
     mobileToggle.addEventListener('click', () => {
-      mainNav.classList.toggle('active');
+      mobileOverlay.classList.toggle('active');
+      document.body.style.overflow = mobileOverlay.classList.contains('active') ? 'hidden' : '';
     });
 
-    // Close mobile nav when clicking a link
-    mainNav.querySelectorAll('.nav-link').forEach(link => {
+    mobileOverlay.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        mainNav.classList.remove('active');
+        mobileOverlay.classList.remove('active');
+        document.body.style.overflow = '';
       });
     });
   }
@@ -80,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const amount = parseInt(card.getAttribute('data-amount'), 10);
       setAmount(amount);
       
-      // Scroll to donation box smoothly
       const box = document.querySelector('.donation-box-direct');
       if (box) {
         box.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -94,7 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (donateNowBtn) {
     donateNowBtn.addEventListener('click', () => {
-      // Direct link to official Twingle donation form
       const twingleUrl = 'https://spenden.twingle.de/initium-care-die-gesundheitskasse-fuer-afrika-e-v/ihsanprojects/tw65bb8df6e2c62/form?tw_amount=' + currentAmount;
       window.open(twingleUrl, '_blank');
     });
@@ -144,6 +143,9 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.modal-backdrop.active').forEach(modal => {
         modal.classList.remove('active');
       });
+      if (mobileOverlay && mobileOverlay.classList.contains('active')) {
+        mobileOverlay.classList.remove('active');
+      }
       document.body.style.overflow = '';
     }
   });

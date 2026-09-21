@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ihsanprojects – Gesundheitsversorgung, die Menschen erreicht</title>
-  <meta name="description" content="Ihsanprojects ermöglicht kostenlose und verlässliche medizinische Grundversorgung für Straßen- und Waisenkinder sowie bedürftige Familien im Senegal. 100% Spende, 0% Verwaltung.">
+  <title>Ihsanprojects · Gesundheitsversorgung, die Menschen erreicht</title>
+  <meta name="description" content="Ihsanprojects ermöglicht kostenlose und verlässliche medizinische Grundversorgung für Straßenkinder, Waisenkinder sowie bedürftige Familien im Senegal. 100% Spende, 0% Verwaltung.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
@@ -13,158 +13,159 @@
 </head>
 <body>
 
-  <!-- Top Announcement Bar -->
-  <aside class="topbar">
-    <div class="container topbar-content">
-      <div class="topbar-left">
-        <span class="badge badge-gold">BMW Group Award 2025</span>
-        <span class="topbar-text"><strong>100 % Spende vor Ort.</strong> 0 % Verwaltungskosten – Jeder Euro erreicht die Kinder in Mbour.</span>
-      </div>
-      <div class="topbar-right">
-        <a href="#transparenz" class="topbar-link">Initiative Transparente Zivilgesellschaft</a>
-        <span class="topbar-divider">|</span>
-        <span class="topbar-lang">DE</span>
-      </div>
-    </div>
-  </aside>
+  <!-- FLOATING PILL NAVIGATION (INSPIRIERT VON X-MARKETING.EU) -->
+  <nav class="floating-nav" id="mainNav">
+    <a href="#hero" class="nav-brand" aria-label="Ihsanprojects Startseite">
+      <img src="assets/img/logo.png" alt="Ihsanprojects Logo" class="nav-logo">
+    </a>
 
-  <!-- Sticky Main Header -->
-  <header class="site-header" id="header">
-    <div class="container header-container">
-      <a href="#hero" class="brand-link" aria-label="Ihsanprojects Startseite">
-        <img src="assets/img/logo.png" alt="Ihsanprojects Logo" class="brand-logo">
+    <div class="nav-menu" id="navMenu">
+      <a href="#intro" class="nav-link">Unser Ansatz</a>
+      <a href="#funktionsweise" class="nav-link">Versorgungssystem</a>
+      <a href="#spenden" class="nav-link">Spenden</a>
+      <a href="#einblicke" class="nav-link">Praxis & Apotheke</a>
+      <a href="#partner" class="nav-link">Organisationen</a>
+      <a href="#transparenz" class="nav-link">Transparenz</a>
+    </div>
+
+    <div class="nav-actions">
+      <a href="#spenden" class="btn-pill-primary">
+        <span class="btn-text-full">Jetzt Spenden</span><span class="btn-text-short">Spenden</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
-
-      <nav class="main-nav" id="mainNav">
-        <ul class="nav-list">
-          <li><a href="#ansatz" class="nav-link">Unser Ansatz</a></li>
-          <li><a href="#funktionsweise" class="nav-link">Versorgungssystem</a></li>
-          <li><a href="#spenden" class="nav-link">Spenden & Wirkung</a></li>
-          <li><a href="#einblicke" class="nav-link">Praxis & Apotheke</a></li>
-          <li><a href="#partner" class="nav-link">Für Organisationen</a></li>
-          <li><a href="#transparenz" class="nav-link">Transparenz</a></li>
-        </ul>
-      </nav>
-
-      <div class="header-actions">
-        <a href="#spenden" class="btn btn-primary btn-sm">Jetzt Spenden</a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Menü umschalten">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+      <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </header>
+  </nav>
+
+  <!-- MOBILE OVERLAY MENU -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <div class="mobile-overlay-content">
+      <a href="#intro" class="mobile-nav-link">Unser Ansatz</a>
+      <a href="#funktionsweise" class="mobile-nav-link">Versorgungssystem</a>
+      <a href="#spenden" class="mobile-nav-link">Spenden & Wirkung</a>
+      <a href="#einblicke" class="mobile-nav-link">Praxis & Apotheke</a>
+      <a href="#partner" class="mobile-nav-link">Für Organisationen</a>
+      <a href="#transparenz" class="mobile-nav-link">Transparenz & Auszeichnungen</a>
+      <a href="#spenden" class="btn btn-primary btn-lg btn-block mt-4">Jetzt Spenden</a>
+    </div>
+  </div>
 
   <main>
-    <!-- HERO SECTION MIT ECHTEM VIDEOLOOP -->
-    <section class="hero-section" id="hero">
-      <div class="container hero-container">
-        <div class="hero-grid">
-          <div class="hero-content">
-            <div class="hero-pill">
-              <img src="assets/img/logo_badge.png" alt="IP" class="hero-pill-icon">
-              <span>Initiative für Gesundheit und Bildung e.V. · Mbour, Senegal</span>
-            </div>
-
-            <h1 class="hero-title">
-              Gesundheits&shy;versorgung, die Menschen erreicht.
-            </h1>
-
-            <p class="hero-lead">
-              Wir schaffen Zugang zu medizinischer Versorgung dort, wo Behandlung für viele Menschen sonst nicht bezahlbar wäre.
-            </p>
-
-            <p class="hero-subtext">
-              Mit eigenen medizinischen Strukturen und starken lokalen Partnerschaften ermöglichen wir Menschen im Senegal eine verlässliche und kostenlose Grundversorgung.
-            </p>
-
-            <div class="hero-cta-group">
-              <a href="#spenden" class="btn btn-primary btn-lg shadow-lift">
-                <span>Versorgung ermöglichen</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-              <a href="#funktionsweise" class="btn btn-outline-secondary btn-lg">
-                <span>So funktioniert das System</span>
-              </a>
-            </div>
-
-            <div class="hero-trust-row">
-              <span class="trust-tag">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                100% Spendenwirkung vor Ort
-              </span>
-              <span class="trust-tag">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                0% Verwaltungskosten
-              </span>
-              <span class="trust-tag">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Staatlich als gemeinnützig anerkannt
-              </span>
-            </div>
-          </div>
-
-          <div class="hero-visual">
-            <div class="video-showcase-card shadow-xl">
-              <div class="video-window-header">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
-                <span class="video-window-title">Ihsanprojects · Offizieller Videoloop</span>
-              </div>
-              <div class="video-inner-wrap">
-                <video id="heroVideo" class="hero-video-player" autoplay muted loop playsinline preload="auto">
-                  <source src="assets/video/hero.mp4" type="video/mp4">
-                  Ihr Browser unterstützt dieses Video nicht.
-                </video>
-              </div>
-              <div class="video-caption-strip">
-                <div class="sound-status">
-                  <span class="pulse-dot"></span>
-                  <span>Video läuft tonlos & ressourcenschonend</span>
-                </div>
-                <span class="video-location-tag">Mbour · Senegal</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Trust Stats Banner -->
-        <div class="hero-stats-bar">
-          <div class="stat-item">
-            <span class="stat-num">100 %</span>
-            <span class="stat-label">Spendenwirkung vor Ort</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-num">0 %</span>
-            <span class="stat-label">Verwaltungskosten</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-num">24 / 7</span>
-            <span class="stat-label">Bereitschaft in der Kinderpraxis</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-num">Kostenlos</span>
-            <span class="stat-label">Medikamente für Waisen & Straßenkinder</span>
-          </div>
-        </div>
+    <!-- 1. FULLSCREEN OPENING VIDEO HERO (INSPIRIERT VON X-MARKETING.EU) -->
+    <section class="hero-video-stage" id="hero">
+      <div class="hero-video-container">
+        <video id="heroVideo" class="hero-fullscreen-video" autoplay muted loop playsinline preload="auto">
+          <source src="assets/video/hero.mp4" type="video/mp4">
+          Ihr Browser unterstützt dieses Video nicht.
+        </video>
       </div>
 
-      <div class="hero-wave-divider">
+      <!-- Subtle Video Status Indicator -->
+      <div class="hero-video-status">
+        <span class="status-pulse"></span>
+        <span>Offizielles Initiative Video · Tonlos im Endlosloop</span>
+      </div>
+
+      <!-- Bottom Scroll Cue -->
+      <a href="#intro" class="hero-scroll-cue" aria-label="Zur Mission scrollen">
+        <span class="scroll-cue-text">Entdecken</span>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 10l5 5 5-5"/></svg>
+      </a>
+
+      <!-- Wave Transition Divider -->
+      <div class="hero-stage-wave">
         <img src="assets/img/wave_divider.png" alt="Dekorative Welle" class="wave-img">
       </div>
     </section>
 
-    <!-- SECTION 2: WAS WIR TUN (EDITORIAL ANKER) -->
+    <!-- 2. EDITORIAL INTRO SECTION: MISSION & STATS -->
+    <section class="section section-intro" id="intro">
+      <div class="container">
+        
+        <!-- Top Announcement Bar -->
+        <div class="intro-announcement-bar">
+          <div class="intro-badge">BMW GROUP AWARD 2025</div>
+          <p class="intro-badge-text">
+            <strong>100 % Spende vor Ort.</strong> 0 % Verwaltungskosten: Jeder Euro erreicht die Kinder in Mbour.
+          </p>
+        </div>
+
+        <div class="intro-content-wrap">
+          <div class="intro-pill">
+            <img src="assets/img/logo_badge.png" alt="IP" class="intro-pill-icon">
+            <span>Initiative für Gesundheit und Bildung e.V. · Mbour, Senegal</span>
+          </div>
+
+          <h1 class="intro-headline">
+            Gesundheitsversorgung, die Menschen erreicht.
+          </h1>
+
+          <p class="intro-lead">
+            Wir schaffen Zugang zu medizinischer Versorgung dort, wo Behandlung für viele Menschen sonst nicht bezahlbar wäre.
+          </p>
+
+          <p class="intro-subtext">
+            Mit eigenen medizinischen Strukturen und starken lokalen Partnerschaften ermöglichen wir Menschen im Senegal eine verlässliche und kostenlose Grundversorgung.
+          </p>
+
+          <div class="intro-cta-row">
+            <a href="#spenden" class="btn btn-primary btn-lg shadow-lift">
+              <span>Versorgung ermöglichen</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#funktionsweise" class="btn btn-outline-secondary btn-lg">
+              <span>So funktioniert das System</span>
+            </a>
+          </div>
+
+          <div class="intro-trust-tags">
+            <span class="trust-tag">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              100 % Spendenwirkung vor Ort
+            </span>
+            <span class="trust-tag">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              0 % Verwaltungskosten
+            </span>
+            <span class="trust-tag">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              Staatlich als gemeinnützig anerkannt
+            </span>
+          </div>
+        </div>
+
+        <!-- 4 Key Metrics Bar -->
+        <div class="intro-stats-grid">
+          <div class="stat-card">
+            <div class="stat-card-number">100 %</div>
+            <div class="stat-card-label">Spendenwirkung vor Ort</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-number">0 %</div>
+            <div class="stat-card-label">Verwaltungskosten</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-number">24 / 7</div>
+            <div class="stat-card-label">Bereitschaft in der Kinderpraxis</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-number">Kostenlos</div>
+            <div class="stat-card-label">Medikamente für Waisen und Straßenkinder</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. WAS WIR TUN (EDITORIAL ANKER MIT REALFOTO MBOUR) -->
     <section class="section section-editorial" id="ansatz">
       <div class="container">
         <div class="editorial-grid">
           <div class="editorial-media">
             <div class="image-card">
-              <img src="assets/img/praxis_1.png" alt="Medizinisches Personal bei der Dokumentation in der Praxis Mbour" class="editorial-img">
+              <img src="assets/img/praxis_1.png" alt="Medizinisches Personal bei der Dokumentation in der Praxis Mbour" class="editorial-img" loading="eager">
               <div class="image-caption">
                 <strong>Praxis Mbour, Senegal</strong>
                 <span>Staatlich examinierte Pflegekräfte im täglichen Einsatz vor Ort.</span>
@@ -177,26 +178,26 @@
             <h2 class="editorial-title">
               Wir schaffen Gesundheitszugang, wo es keine Absicherung gibt.
             </h2>
-            
-            <p class="editorial-lead">
-              Wer krank wird, muss Behandlung und Medikamente häufig selbst bezahlen. Für Familien mit geringem Einkommen kann bereits ein einfacher Arztbesuch zur finanziellen Belastung werden.
-            </p>
+            <div class="editorial-body">
+              <p>
+                Wer krank wird, muss Behandlung und Medikamente häufig selbst bezahlen. Für Familien mit geringem Einkommen kann bereits ein einfacher Arztbesuch zur finanziellen Belastung werden.
+              </p>
+              <p>
+                <strong>Ihsanprojects</strong> schafft deshalb eine eigene Versorgungsstruktur: mit medizinischen Anlaufstellen, direktem Zugang zu Medikamenten und Behandlungscoupons für Menschen, die über unsere lokalen Partner erreicht werden.
+              </p>
 
-            <p class="editorial-body">
-              <strong>Ihsanprojects</strong> schafft deshalb eine eigene Versorgungsstruktur: mit medizinischen Anlaufstellen, direktem Zugang zu Medikamenten und Behandlungscoupons für Menschen, die über unsere lokalen Partner erreicht werden.
-            </p>
+              <blockquote class="editorial-quote">
+                „So entsteht Hilfe, die nicht erst im Notfall beginnt, sondern dauerhaft verfügbar ist.“
+              </blockquote>
 
-            <blockquote class="editorial-quote">
-              „So entsteht Hilfe, die nicht erst im Notfall beginnt, sondern dauerhaft verfügbar ist.“
-            </blockquote>
-
-            <div class="editorial-partner-highlight">
-              <div class="partner-icon-circle">
-                <img src="assets/img/logo_badge.png" alt="IP Symbol">
-              </div>
-              <div class="partner-highlight-content">
-                <h3>Wir arbeiten dort, wo Menschen bereits Vertrauen haben.</h3>
-                <p>Schulen, Waisenheime, Frauenkooperativen, Werkstätten, Bäckereien und andere lokale Einrichtungen kennen die Menschen in ihrem Umfeld. Sie übernehmen eine entscheidende Rolle: Sie stellen den Kontakt her und ermöglichen einen einfachen Zugang zur Versorgung.</p>
+              <div class="editorial-card-info">
+                <div class="info-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="info-text">
+                  <strong>Wir arbeiten dort, wo Menschen bereits Vertrauen haben.</strong>
+                  <span>Schulen, Waisenhäuser, Frauenkooperativen, Werkstätten, Bäckereien und andere lokale Einrichtungen kennen die Menschen in ihrem Umfeld. Sie übernehmen eine entscheidende Rolle: Sie stellen den Kontakt her und ermöglichen einen einfachen Zugang zur Versorgung.</span>
+                </div>
               </div>
             </div>
           </div>
@@ -204,7 +205,7 @@
       </div>
     </section>
 
-    <!-- SECTION 3: SYSTEMATIK / DER 4-STUFEN-KREISLAUF -->
+    <!-- 4. SYSTEMERKLÄRUNG (4 SCHRITTE GRAPHIC & DETAILCARDS) -->
     <section class="section section-light" id="funktionsweise">
       <div class="container">
         <div class="section-header text-center">
@@ -215,97 +216,85 @@
           </p>
         </div>
 
-        <!-- Visual Process Graphic (Desktop) -->
-        <div class="process-graphic-container">
-          <img src="assets/img/process_graphic.png" alt="Ablauf 1 bis 4 der medizinischen Versorgung" class="process-graphic-img">
+        <div class="process-graphic-wrapper">
+          <img src="assets/img/process_graphic.png" alt="Prozessgrafik der 4 Schritte: Partner, Behandlungscoupon, Arztpraxis, Apotheke" class="process-banner-img">
         </div>
 
-        <!-- Responsive Step Cards -->
-        <div class="steps-grid">
-          <!-- Step 1 -->
-          <article class="step-card">
-            <div class="step-number-badge">1</div>
-            <div class="step-header">
-              <div class="step-icon-badge">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              </div>
-              <h3 class="step-title">Partner</h3>
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="step-badge">1</div>
+            <div class="card-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </div>
-            <p class="step-desc">
+            <h3>Partner</h3>
+            <p>
               Wir arbeiten mit lokalen Schulen, sozialen Einrichtungen, Frauenkooperativen und kleinen Betrieben zusammen.
             </p>
-            <p class="step-details">
+            <p class="step-detail">
               Sie kennen die Menschen vor Ort und können diejenigen identifizieren, für die medizinische Versorgung finanziell nur schwer erreichbar ist.
             </p>
-          </article>
+          </div>
 
-          <!-- Step 2 -->
-          <article class="step-card">
-            <div class="step-number-badge">2</div>
-            <div class="step-header">
-              <div class="step-icon-badge">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
-              </div>
-              <h3 class="step-title">Behandlungscoupon</h3>
+          <div class="process-card">
+            <div class="step-badge">2</div>
+            <div class="card-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
             </div>
-            <p class="step-desc">
+            <h3>Behandlungscoupon</h3>
+            <p>
               Über unsere Partner erhalten berechtigte Personen einen Behandlungscoupon.
             </p>
-            <p class="step-details">
+            <p class="step-detail">
               Dieser ermöglicht ihnen je nach sozialer Lage entweder eine vollständig kostenlose Behandlung oder eine Behandlung gegen eine geringe Kostenpauschale.
             </p>
-          </article>
+          </div>
 
-          <!-- Step 3 -->
-          <article class="step-card">
-            <div class="step-number-badge">3</div>
-            <div class="step-header">
-              <div class="step-icon-badge">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-              </div>
-              <h3 class="step-title">Arztpraxis</h3>
+          <div class="process-card">
+            <div class="step-badge">3</div>
+            <div class="card-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             </div>
-            <p class="step-desc">
+            <h3>Arztpraxis</h3>
+            <p>
               Mit dem Coupon können Patientinnen und Patienten eine angebundene medizinische Einrichtung aufsuchen.
             </p>
-            <p class="step-details">
+            <p class="step-detail">
               Dort werden sie untersucht und entsprechend ihres medizinischen Bedarfs ambulant oder stationär aufgenommen und versorgt.
             </p>
-          </article>
+          </div>
 
-          <!-- Step 4 -->
-          <article class="step-card">
-            <div class="step-number-badge">4</div>
-            <div class="step-header">
-              <div class="step-icon-badge">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>
-              </div>
-              <h3 class="step-title">Apotheke</h3>
+          <div class="process-card">
+            <div class="step-badge">4</div>
+            <div class="card-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
             </div>
-            <p class="step-desc">
+            <h3>Apotheke</h3>
+            <p>
               Wer Medikamente benötigt, erhält Zugang zu den notwendigen Arzneimitteln.
             </p>
-            <p class="step-details">
+            <p class="step-detail">
               Damit endet unsere Unterstützung nicht mit der Diagnose, sondern umfasst auch die weitere Versorgung.
             </p>
-          </article>
+          </div>
         </div>
 
         <div class="process-cta-banner">
           <div class="process-cta-content">
             <strong>Gesundheit ist ein Menschenrecht.</strong>
-            <span>Dank deiner Unterstützung schaffen wir Hoffnung, Würde und Gesundheit – dort, wo sie am meisten gebraucht werden.</span>
+            <span>Dank deiner Unterstützung schaffen wir Hoffnung, Würde und Gesundheit, genau dort, wo sie am meisten gebraucht werden.</span>
           </div>
-          <button class="btn btn-outline-primary" id="openInfographicBtn">Vollständige Infografik anzeigen</button>
+          <button class="btn btn-outline-primary" id="openInfographicBtn">
+            <span>Vollständige Infografik anzeigen</span>
+          </button>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 4: SPENDENMODULE (STATT „PREISPLAN“) -->
+    <!-- 5. SPENDENMODULE (TIERS & TWINGLE SPENDENRECHNER) -->
     <section class="section section-donation" id="spenden">
       <div class="container">
         <div class="section-header text-center">
-          <div class="section-tag section-tag-white">Direkte Wirkung</div>
+          <div class="section-tag section-tag-gold">Direkte Wirkung</div>
           <h2 class="section-title text-white">Mit deiner Spende wird Versorgung konkret</h2>
           <p class="section-subtitle text-white-muted">
             Eine Spende an Ihsanprojects finanziert keine abstrakte Idee. Sie ermöglicht konkrete medizinische Versorgung für Kinder und Familien in Mbour.
@@ -313,18 +302,16 @@
         </div>
 
         <div class="donation-cards-grid">
-          <!-- Modul 1 -->
-          <div class="donation-card" data-package="1" data-amount="15">
+          <!-- Tier 1 -->
+          <div class="donation-card" data-amount="15">
             <div class="donation-card-badge">Akute Hilfe</div>
-            <div class="donation-card-header">
-              <h3 class="donation-card-title">Behandlung ermöglichen</h3>
-              <div class="donation-amount">
-                <span class="currency">ab</span>
-                <span class="value">15</span>
-                <span class="unit">€</span>
-              </div>
+            <h3 class="donation-title">Behandlung ermöglichen</h3>
+            <div class="donation-price">
+              <span class="price-prefix">ab</span>
+              <span class="price-val">15</span>
+              <span class="price-curr">€</span>
             </div>
-            <p class="donation-card-text">
+            <p class="donation-desc">
               Finanziere den Zugang zu einer medizinischen Untersuchung für einen Menschen, der die Behandlung selbst nicht bezahlen könnte.
             </p>
             <ul class="donation-perks">
@@ -335,42 +322,38 @@
             <button class="btn btn-primary btn-block select-donation-btn">Diese Hilfe auswählen</button>
           </div>
 
-          <!-- Modul 2 (Featured) -->
-          <div class="donation-card featured" data-package="2" data-amount="35">
+          <!-- Tier 2 (Featured) -->
+          <div class="donation-card featured" data-amount="35">
             <div class="featured-ribbon">Besonders wirksam</div>
             <div class="donation-card-badge">Apotheke auffüllen</div>
-            <div class="donation-card-header">
-              <h3 class="donation-card-title">Medikamente ermöglichen</h3>
-              <div class="donation-amount">
-                <span class="currency">ab</span>
-                <span class="value">35</span>
-                <span class="unit">€</span>
-              </div>
+            <h3 class="donation-title">Medikamente ermöglichen</h3>
+            <div class="donation-price">
+              <span class="price-prefix">ab</span>
+              <span class="price-val">35</span>
+              <span class="price-curr">€</span>
             </div>
-            <p class="donation-card-text">
-              Hilf dabei, notwendige Medikamente nach einer Behandlung bereitzustellen – von Schmerzmitteln bis zur Antibiotikatherapie.
+            <p class="donation-desc">
+              Hilf dabei, notwendige Medikamente nach einer Behandlung bereitzustellen, von Schmerzmitteln bis zur Antibiotikatherapie.
             </p>
             <ul class="donation-perks">
               <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Geprüfte, sichere Arzneimittel</li>
               <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Kostenfreie Abgabe an Straßenkinder</li>
               <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Sicherung der Solidarischen Apotheke</li>
             </ul>
-            <button class="btn btn-primary btn-block select-donation-btn">Diese Hilfe auswählen</button>
+            <button class="btn btn-gold btn-block select-donation-btn">Diese Hilfe auswählen</button>
           </div>
 
-          <!-- Modul 3 -->
-          <div class="donation-card" data-package="3" data-amount="100">
+          <!-- Tier 3 -->
+          <div class="donation-card" data-amount="100">
             <div class="donation-card-badge">Nachhaltigkeit</div>
-            <div class="donation-card-header">
-              <h3 class="donation-card-title">Versorgung dauerhaft stärken</h3>
-              <div class="donation-amount">
-                <span class="currency">ab</span>
-                <span class="value">100</span>
-                <span class="unit">€</span>
-              </div>
+            <h3 class="donation-title">Versorgung dauerhaft stärken</h3>
+            <div class="donation-price">
+              <span class="price-prefix">ab</span>
+              <span class="price-val">100</span>
+              <span class="price-curr">€</span>
             </div>
-            <p class="donation-card-text">
-              Unterstütze unsere medizinischen Strukturen langfristig – von Personal und Ausstattung bis zum verlässlichen Betrieb unserer Einrichtungen.
+            <p class="donation-desc">
+              Unterstütze unsere medizinischen Strukturen langfristig, von Personal und Ausstattung bis zum verlässlichen Betrieb unserer Einrichtungen.
             </p>
             <ul class="donation-perks">
               <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>24/7 Notfallbereitschaft erhalten</li>
@@ -381,7 +364,7 @@
           </div>
         </div>
 
-        <!-- Interactive Spenden-Rechner & Twingle Spendenformular-Link -->
+        <!-- Interactive Spenden Rechner & Twingle Spendenformular Link -->
         <div class="donation-box-direct">
           <div class="donation-box-content">
             <h4>Oder wähle einen freien Betrag:</h4>
@@ -403,14 +386,14 @@
             </button>
             <small class="secure-badge">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-              SSL-verschlüsselt & steuerlich absetzbar
+              SSL verschlüsselt und steuerlich absetzbar
             </small>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 5: VOR-ORT-EINBLICKE (PRAXIS & APOTHEKE) -->
+    <!-- 6. VOR ORT EINBLICKE (PRAXIS & APOTHEKE) -->
     <section class="section" id="einblicke">
       <div class="container">
         <div class="section-header">
@@ -426,7 +409,7 @@
             <img src="assets/img/apotheke_1.png" alt="Die Solidarische Apotheke von Ihsanprojects" loading="eager">
             <div class="gallery-overlay">
               <h4>Solidarische Apotheke Mbour</h4>
-              <p>Strukturierte Arzneimittellagerung: Kostenlos für Straßen- und Waisenkinder, bezahlbar für die Bevölkerung.</p>
+              <p>Strukturierte Arzneimittellagerung: Kostenlos für Straßenkinder und Waisenkinder, bezahlbar für die Bevölkerung.</p>
             </div>
           </div>
 
@@ -434,7 +417,7 @@
             <img src="assets/img/raeume_1.png" alt="Behandlungsraum mit Untersuchungsliege" loading="eager">
             <div class="gallery-overlay">
               <h4>Behandlungsraum</h4>
-              <p>Hygienische, professionell ausgestattete Praxisräume für sichere Erst- und Wundversorgung.</p>
+              <p>Hygienische, professionell ausgestattete Praxisräume für sichere Erstversorgung und Wundversorgung.</p>
             </div>
           </div>
 
@@ -457,7 +440,7 @@
       </div>
     </section>
 
-    <!-- SECTION 6: FÜR EINRICHTUNGEN & PARTNER (B2B / NGOS) -->
+    <!-- 7. FÜR EINRICHTUNGEN & PARTNER (B2B / NGOS) -->
     <section class="section section-partner" id="partner">
       <div class="container">
         <div class="partner-box">
@@ -478,135 +461,156 @@
                 <span class="pstep-num">1</span>
                 <div>
                   <strong>Einrichtung anmelden</strong>
-                  <p>Kontakt aufnehmen und Projekt kurz vorstellen.</p>
+                  <span>Kontakt aufnehmen und Projekt kurz vorstellen.</span>
                 </div>
               </div>
               <div class="pstep">
                 <span class="pstep-num">2</span>
                 <div>
                   <strong>Versorgung festlegen</strong>
-                  <p>Schüler, Waisenhauskinder oder Mitarbeiter absichern.</p>
+                  <span>Schüler, Waisenhauskinder oder Mitarbeiter absichern.</span>
                 </div>
               </div>
               <div class="pstep">
                 <span class="pstep-num">3</span>
                 <div>
                   <strong>Zugang zur Praxis</strong>
-                  <p>Behandlungscoupons für Patienten ausgeben.</p>
+                  <span>Behandlungscoupons für Patienten ausgeben.</span>
                 </div>
               </div>
               <div class="pstep">
                 <span class="pstep-num">4</span>
                 <div>
                   <strong>Transparente Abrechnung</strong>
-                  <p>Einfacher Strukturbeitrag & kleine Versorgungspauschale.</p>
+                  <span>Einfacher Strukturbeitrag & kleine Versorgungspauschale.</span>
                 </div>
               </div>
             </div>
 
             <div class="partner-actions">
               <button class="btn btn-primary btn-lg" id="partnerModalBtn">
-                Einrichtung anbinden anfragen
+                <span>Einrichtung anbinden anfragen</span>
               </button>
-              <a href="#kontakt" class="btn btn-outline-secondary btn-lg">Fragen zur Kooperation</a>
+              <a href="mailto:hallo@ihsanprojects.com" class="btn btn-outline-secondary btn-lg">
+                <span>Fragen zur Kooperation</span>
+              </a>
             </div>
           </div>
 
-          <div class="partner-side-card">
-            <div class="side-card-badge">Für wen ist eine Kooperation möglich?</div>
-            <ul class="target-groups-list">
+          <div class="partner-card-highlight">
+            <h3>Für wen ist eine Kooperation möglich?</h3>
+            <ul class="partner-check-list">
               <li>
-                <span class="bullet">✓</span>
-                <div><strong>Schulen & Bildungsprojekte:</strong> Absicherung aller Schülerinnen und Schüler.</div>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div>
+                  <strong>Schulen & Bildungsprojekte:</strong>
+                  <span>Absicherung aller Schülerinnen und Schüler.</span>
+                </div>
               </li>
               <li>
-                <span class="bullet">✓</span>
-                <div><strong>Waisenhäuser & Kinderhilfsprojekte:</strong> Kontinuierliche kinderärztliche Betreuung.</div>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div>
+                  <strong>Waisenhäuser & Kinderhilfsprojekte:</strong>
+                  <span>Kontinuierliche kinderärztliche Betreuung.</span>
+                </div>
               </li>
               <li>
-                <span class="bullet">✓</span>
-                <div><strong>Frauenhäuser & Kooperativen:</strong> Schutz und gynäkologische / allgemeine Versorgung.</div>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div>
+                  <strong>Frauenhäuser & Kooperativen:</strong>
+                  <span>Schutz und gynäkologische sowie allgemeine Versorgung.</span>
+                </div>
               </li>
               <li>
-                <span class="bullet">✓</span>
-                <div><strong>Ausbildungsstätten & Werkstätten:</strong> Arbeitsschutz und Notfallversorgung für Lehrlinge.</div>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div>
+                  <strong>Ausbildungsstätten & Werkstätten:</strong>
+                  <span>Arbeitsschutz und Notfallversorgung für Lehrlinge.</span>
+                </div>
               </li>
               <li>
-                <span class="bullet">✓</span>
-                <div><strong>Internationale Hilfsorganisationen:</strong> Nutzung unserer erprobten Vor-Ort-Strukturen.</div>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div>
+                  <strong>Internationale Hilfsorganisationen:</strong>
+                  <span>Nutzung unserer erprobten Strukturen vor Ort.</span>
+                </div>
               </li>
             </ul>
-            <div class="side-card-footer">
-              „Sie kümmern sich um Ihr Projekt. Wir kümmern uns um die medizinische Versorgung.“
+
+            <div class="partner-quote-box">
+              <p>„Sie kümmern sich um Ihr Projekt. Wir kümmern uns um die medizinische Versorgung.“</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 7: TRANSPARENZ & AWARDS -->
+    <!-- 8. AUSZEICHNUNG & TRANSPARENZ -->
     <section class="section section-light" id="transparenz">
       <div class="container">
-        <div class="transparency-grid">
-          <div class="award-card">
-            <div class="award-badge">Auszeichnung</div>
-            <h3 class="award-title">Gewinner des BMW Group Awards 2025</h3>
-            <p class="award-text">
+        <div class="trust-cards-grid">
+          <div class="trust-card">
+            <div class="trust-card-tag">Auszeichnung</div>
+            <h3 class="trust-card-title">Gewinner des BMW Group Awards 2025</h3>
+            <p>
               Die <strong>BMW Group</strong> hat Ihsanprojects mit dem renommierten Award für gesellschaftliches Engagement ausgezeichnet. Gewürdigt wird unser nachhaltiger Einsatz für die medizinische Grundversorgung und Bildung von Straßenkindern in Mbour.
             </p>
-            <a href="https://www.press.bmwgroup.com/deutschland/article/detail/T0452735DE/sie-schaffen-lichtblicke:-die-preistraeger-des-bmw-group-award-fuer-gesellschaftliches-engagement-2025?language=de" target="_blank" rel="noopener" class="text-link">
-              Offizielle Pressemitteilung der BMW Group lesen →
+            <a href="https://www.bmwgroup.com" target="_blank" rel="noopener" class="link-arrow">
+              <span>Offizielle Pressemitteilung der BMW Group lesen</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
           </div>
 
-          <div class="transparency-card">
-            <div class="award-badge">Verlässlichkeit</div>
-            <h3 class="award-title">Initiative Transparente Zivilgesellschaft</h3>
-            <p class="award-text">
+          <div class="trust-card">
+            <div class="trust-card-tag">Verlässlichkeit</div>
+            <h3 class="trust-card-title">Initiative Transparente Zivilgesellschaft</h3>
+            <p>
               Transparenz ist für uns kein Zusatz, sie gehört zum Kern des Projekts. Spenderinnen und Spender können jederzeit nachvollziehen, welche Projekte wir finanzieren und wofür Spendengelder eingesetzt werden.
             </p>
-            <div class="transparency-points">
-              <span>✓ 100% ehrenamtliche Trägerstruktur</span>
-              <span>✓ Offenlegung aller Mittelverwendungen</span>
-              <span>✓ Keine Spendengelder für Verwaltung</span>
-            </div>
+            <ul class="trust-proof-list">
+              <li>✓ 100 % ehrenamtliche Trägerstruktur</li>
+              <li>✓ Offenlegung aller Mittelverwendungen</li>
+              <li>✓ Keine Spendengelder für Verwaltung</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CALL TO ACTION BANNER -->
-    <section class="cta-banner-section">
+    <!-- 9. FINAL CALL TO ACTION -->
+    <section class="section section-cta-final">
       <div class="container text-center">
-        <h2 class="cta-banner-title">Gesundheit darf keine Frage des Einkommens sein.</h2>
-        <p class="cta-banner-sub">
+        <h2 class="final-cta-headline">
+          Gesundheit darf keine Frage des Einkommens sein.
+        </h2>
+        <p class="final-cta-sub">
           Mit deiner Unterstützung können wir medizinische Versorgung für Menschen zugänglich machen, die sonst darauf verzichten müssten.
         </p>
         <a href="#spenden" class="btn btn-gold btn-xl shadow-lift">
-          Jetzt Versorgung ermöglichen
+          <span>Jetzt Versorgung ermöglichen</span>
         </a>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer" id="kontakt">
-    <div class="container footer-container">
+  <!-- SITE FOOTER (VOLLSTÄNDIGE RECHTLICHE ANGABEN OHNE BINDESTRICHE) -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
       <div class="footer-col footer-col-brand">
-        <img src="assets/img/logo.png" alt="Ihsanprojects" class="footer-logo">
-        <p class="footer-mission">
-          Ihsanprojects – Initiative für Gesundheit und Bildung e.V. Wir schaffen verlässliche medizinische Grundversorgung im Senegal.
+        <img src="assets/img/logo_badge.png" alt="Ihsanprojects" class="footer-badge-logo">
+        <p class="footer-desc">
+          Ihsanprojects · Initiative für Gesundheit und Bildung e.V. Wir schaffen verlässliche medizinische Grundversorgung im Senegal.
         </p>
-        <p class="footer-legal-entity">
-          Trägerverein: <strong>IWQ - Initiative für Bildung und Qualifizierung e.V.</strong><br>
+        <p class="footer-legal-carrier">
+          Trägerverein: IWQ · Initiative für Bildung und Qualifizierung e.V.<br>
           Eingetragen beim Amtsgericht Hamburg, VR 25621
         </p>
       </div>
 
       <div class="footer-col">
-        <h4 class="footer-heading">Navigation</h4>
+        <h4 class="footer-title">Navigation</h4>
         <ul class="footer-links">
-          <li><a href="#ansatz">Unser Ansatz</a></li>
+          <li><a href="#intro">Unser Ansatz</a></li>
           <li><a href="#funktionsweise">Versorgungskreislauf</a></li>
           <li><a href="#spenden">Spenden & Wirkung</a></li>
           <li><a href="#einblicke">Praxis & Apotheke</a></li>
@@ -616,35 +620,34 @@
       </div>
 
       <div class="footer-col">
-        <h4 class="footer-heading">Kontakt & Sitz</h4>
-        <address class="footer-address">
-          Christoph-Probst-Weg 4<br>
+        <h4 class="footer-title">Kontakt & Sitz</h4>
+        <p class="footer-contact">
+          Christoph Probst Weg 4<br>
           20251 Hamburg<br>
-          Deutschland<br><br>
-          Telefon: <a href="tel:+4940607737640">+49 (0) 40 607737640</a><br>
-          E-Mail: <a href="mailto:hallo@ihsanprojects.com">hallo@ihsanprojects.com</a>
-        </address>
+          Deutschland
+        </p>
+        <p class="footer-contact">
+          Telefon: +49 (0) 40 607737640<br>
+          Email: <a href="mailto:hallo@ihsanprojects.com">hallo@ihsanprojects.com</a>
+        </p>
       </div>
 
       <div class="footer-col">
-        <h4 class="footer-heading">Spendenkonto</h4>
-        <div class="bank-card">
-          <p><strong>FINOM PAYMENTS</strong></p>
-          <p>IBAN: <code>DE03 1001 8000 0811 7653 50</code></p>
-          <p>BIC: <code>FNOMDEB2</code></p>
+        <h4 class="footer-title">Spendenkonto</h4>
+        <div class="footer-bank-card">
+          <strong>FINOM PAYMENTS</strong>
+          <span class="bank-iban">IBAN: DE03 1001 0000 0811 7653 50</span>
+          <span class="bank-bic">BIC: FNOMDEB2</span>
           <small>Steuerbegünstigt als gemeinnützige Organisation anerkannt.</small>
         </div>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <div class="container footer-bottom-inner">
-        <p>© 2026 Ihsanprojects. Alle Rechte vorbehalten.</p>
-        <div class="footer-legal-links">
-          <button class="modal-trigger-btn" id="openImpressumBtn">Impressum</button>
-          <span class="sep">•</span>
-          <button class="modal-trigger-btn" id="openDatenschutzBtn">Datenschutz</button>
-        </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Ihsanprojects. Alle Rechte vorbehalten.</p>
+      <div class="footer-bottom-links">
+        <button class="footer-modal-btn" id="openImpressumBtn">Impressum</button>
+        <button class="footer-modal-btn" id="openDatenschutzBtn">Datenschutz</button>
       </div>
     </div>
   </footer>
@@ -657,8 +660,8 @@
         <h2>Impressum</h2>
         <p><strong>Gesetzliche Anbieterkennung:</strong></p>
         <p>
-          IWQ- Initiative für Bildung und Qualifizierung e.V.<br>
-          Christoph-Probst-Weg 4<br>
+          IWQ · Initiative für Bildung und Qualifizierung e.V.<br>
+          Christoph Probst Weg 4<br>
           20251 Hamburg<br>
           Deutschland
         </p>
@@ -669,7 +672,7 @@
         <p>
           <strong>Kontakt:</strong><br>
           Telefon: +49 40 607737640<br>
-          E-Mail: <a href="mailto:hallo@ihsanprojects.com">hallo@ihsanprojects.com</a>
+          Email: <a href="mailto:hallo@ihsanprojects.com">hallo@ihsanprojects.com</a>
         </p>
         <p>
           <strong>Registereintrag:</strong><br>
@@ -677,14 +680,14 @@
           Vereinsregisternummer: VR 25621
         </p>
         <p>
-          <strong>Umsatzsteuer-ID / Wirtschafts-ID:</strong><br>
-          USt-IdNr.: DE426205582<br>
-          Wi-ID-Nr.: DE426205582
+          <strong>Umsatzsteuer Identifikationsnummer:</strong><br>
+          USt IdNr.: DE426205582<br>
+          Wirtschafts Identifikationsnummer: DE426205582
         </p>
         <p>
           <strong>Inhaltlich Verantwortlicher gemäß § 18 Abs. 2 MStV:</strong><br>
           Mustapha Barry<br>
-          Christoph-Probst-Weg 4, 20251 Hamburg
+          Christoph Probst Weg 4, 20251 Hamburg
         </p>
         <p class="modal-small">Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor Verbraucherschlichtungsstellen teilzunehmen.</p>
       </div>
@@ -698,16 +701,16 @@
       <div class="modal-body">
         <h2>Datenschutzerklärung</h2>
         <p>Verantwortlicher für die Datenverarbeitung ist:<br>
-        Mustapha Barry, Christoph-Probst-Weg 4, 20251 Hamburg, Deutschland<br>
-        Telefon: +49 40 607737640, E-Mail: info@iwq-ev.de / hallo@ihsanprojects.com</p>
+        Mustapha Barry, Christoph Probst Weg 4, 20251 Hamburg, Deutschland<br>
+        Telefon: +49 40 607737640, Email: info@iwq-ev.de / hallo@ihsanprojects.com</p>
         
         <h3>1. Erhebung und Verarbeitung bei Nutzung des Kontaktformulars</h3>
-        <p>Bei Nutzung unseres Kontaktformulars erheben wir personenbezogene Daten (Name, E-Mail-Adresse, Nachrichtentext) nur in dem zur Verfügung gestellten Umfang zum Zweck der Bearbeitung Ihrer Anfrage gem. Art. 6 Abs. 1 lit. f DSGVO.</p>
+        <p>Bei Nutzung unseres Kontaktformulars erheben wir personenbezogene Daten (Name, Email Adresse, Nachrichtentext) nur in dem zur Verfügung gestellten Umfang zum Zweck der Bearbeitung Ihrer Anfrage gem. Art. 6 Abs. 1 lit. f DSGVO.</p>
 
         <h3>2. Spendenabwicklung über Twingle</h3>
-        <p>Für sichere Online-Spenden nutzen wir das zertifizierte Spendentool der twingle GmbH, Prinzenallee 74, 13357 Berlin. Die Datenübertragung erfolgt verschlüsselt direkt an twingle zur Durchführung der Transaktion und Erstellung der Spendenbescheinigung.</p>
+        <p>Für sichere Online Spenden nutzen wir das zertifizierte Spendentool der twingle GmbH, Prinzenallee 74, 13357 Berlin. Die Datenübertragung erfolgt verschlüsselt direkt an twingle zur Durchführung der Transaktion und Erstellung der Spendenbescheinigung.</p>
 
-        <h3>3. Server-Logfiles & Cookies</h3>
+        <h3>3. Server Logfiles & Cookies</h3>
         <p>Beim Aufruf unserer Seiten speichern Webserver automatisch technische Protokolldaten. Es werden nur technisch notwendige Funktionen ausgeführt. Ein Tracking durch Werbedienstleister findet nicht statt.</p>
       </div>
     </div>
@@ -718,7 +721,7 @@
     <div class="modal-dialog modal-dialog-lg">
       <button class="modal-close" aria-label="Schließen">&times;</button>
       <div class="modal-body text-center">
-        <h3>Komplettes Versorgungssystem (All-in-One)</h3>
+        <h3>Komplettes Versorgungssystem im Überblick</h3>
         <img src="assets/img/ngo_infographic.png" alt="Vollständige Erklärgrafik" class="modal-full-img">
       </div>
     </div>
@@ -738,7 +741,7 @@
             <input type="text" id="pName" required placeholder="z. B. Verein Hoffnung für Kinder e.V.">
           </div>
           <div class="form-group">
-            <label for="pMail">E-Mail-Adresse</label>
+            <label for="pMail">Email Adresse</label>
             <input type="email" id="pMail" required placeholder="kontakt@ihre-organisation.org">
           </div>
           <div class="form-group">
@@ -747,9 +750,10 @@
               <option value="">Bitte auswählen...</option>
               <option value="schule">Schule / Bildungseinrichtung</option>
               <option value="waisenhaus">Waisenhaus / Kinderheim</option>
-              <option value="frauenprojekt">Frauenkooperative / Frauenhaus</option>
-              <option value="werkstatt">Werkstatt / Handwerksbetrieb</option>
-              <option value="sonstiges">Sonstige soziale Einrichtung</option>
+              <option value="frauenhaus">Frauenhaus / Kooperative</option>
+              <option value="werkstatt">Ausbildungsstätte / Werkstatt</option>
+              <option value="ngo">Internationale Hilfsorganisation</option>
+              <option value="sonstiges">Sonstige Einrichtung</option>
             </select>
           </div>
           <div class="form-group">
@@ -757,8 +761,8 @@
             <input type="text" id="pCount" placeholder="z. B. ca. 80 Schulkinder in Mbour">
           </div>
           <div class="form-group">
-            <label for="pMessage">Kurze Nachricht / Besonderheiten</label>
-            <textarea id="pMessage" rows="3" placeholder="Wie können wir Ihre Einrichtung am besten medizinisch absichern?"></textarea>
+            <label for="pMsg">Kurze Nachricht / Besonderheiten</label>
+            <textarea id="pMsg" rows="3" placeholder="Wie können wir Ihre Einrichtung am besten medizinisch absichern?"></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-block btn-lg">Unverbindliche Kooperationsanfrage senden</button>
         </form>
