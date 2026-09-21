@@ -233,15 +233,14 @@ img {
 }
 
 /* ==========================================================================
-   1. FULLSCREEN OPENING VIDEO HERO (INSPIRIERT VON X-MARKETING.EU)
+   1. FULLSCREEN OPENING VIDEO HERO & BLUE GRADIENT (INSPIRIERT VON X-MARKETING)
    ========================================================================== */
 .hero-video-stage {
   position: relative;
   width: 100%;
   height: 100vh;
-  min-height: 600px;
-  max-height: 1080px;
-  background: #FFFFFF;
+  min-height: 640px;
+  background: #FDFDFD;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -250,111 +249,128 @@ img {
 }
 
 .hero-video-container {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem 2rem 3rem;
+  padding: 4.5rem 2rem 5.5rem;
+  background: #FDFDFD;
 }
 
 .hero-fullscreen-video {
   width: 100%;
   height: 100%;
-  max-width: 1280px;
+  max-width: 1240px;
   object-fit: contain;
   display: block;
-  background: #FFFFFF;
+  background: #FDFDFD;
 }
 
-.hero-video-status {
+/* Gradient Fade into Blue wie auf X-Marketing */
+.hero-video-gradient-overlay {
   position: absolute;
-  bottom: 5.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(13, 33, 55, 0.1);
-  padding: 0.4rem 1rem;
-  border-radius: var(--radius-full);
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--navy-800);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(253, 253, 253, 0) 0%,
+    rgba(253, 253, 253, 0) 48%,
+    rgba(7, 19, 33, 0.35) 68%,
+    rgba(7, 19, 33, 0.82) 85%,
+    #071321 100%
+  );
+  z-index: 5;
 }
 
-.status-pulse {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #10B981;
-  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
-  70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
-}
-
-.hero-scroll-cue {
-  position: absolute;
-  bottom: 2.2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.15rem;
-  color: var(--navy-700);
-  text-decoration: none;
-  transition: transform 0.3s ease;
-  animation: scrollFloat 2.5s infinite ease-in-out;
-}
-
-.scroll-cue-text {
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--gray-600);
-}
-
-.hero-scroll-cue svg {
-  color: var(--blue-600);
-}
-
-@keyframes scrollFloat {
-  0%, 100% { transform: translate(-50%, 0); }
-  50% { transform: translate(-50%, 6px); }
-}
-
-.hero-stage-wave {
+/* Ticker running inside the bottom of the Hero */
+.hero-bottom-ticker-wrap {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  line-height: 0;
-  pointer-events: none;
-  z-index: 5;
+  z-index: 10;
+  background: #071321;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1.2rem 0;
+  overflow: hidden;
 }
 
-.hero-stage-wave .wave-img {
-  width: 100%;
-  height: 48px;
-  object-fit: cover;
-  display: block;
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+  align-items: center;
+  will-change: transform;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+.ticker-group {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  padding: 0 1.75rem;
+  flex-shrink: 0;
+}
+
+.ticker-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  white-space: nowrap;
+}
+
+.ticker-val {
+  font-family: var(--font-serif);
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--gold-400);
+  line-height: 1;
+}
+
+.ticker-lbl {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--white);
+  letter-spacing: 0.01em;
+}
+
+.ticker-separator {
+  color: rgba(236, 194, 101, 0.5);
+  font-size: 0.85rem;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 6rem;
+  pointer-events: none;
+  z-index: 15;
+}
+
+.ticker-mask-left {
+  left: 0;
+  background: linear-gradient(90deg, #071321 0%, transparent 100%);
+}
+
+.ticker-mask-right {
+  right: 0;
+  background: linear-gradient(270deg, #071321 0%, transparent 100%);
 }
 
 /* ==========================================================================
-   2. INTRO & MISSION SECTION
+   2. INTRO & MISSION SECTION (CLEAN & OHNE DOPPLUNGEN)
    ========================================================================== */
 .section-intro {
   background: var(--sand-50);
@@ -453,55 +469,6 @@ img {
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
-
-.intro-trust-tags {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 4rem;
-}
-
-.trust-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--navy-800);
-}
-
-.intro-stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  background: var(--navy-900);
-  border-radius: var(--radius-xl);
-  padding: 2.2rem 2.5rem;
-  box-shadow: var(--shadow-lg);
-  color: var(--white);
-}
-
-.stat-card {
-  text-align: center;
-}
-
-.stat-card-number {
-  font-family: var(--font-serif);
-  font-size: 2.3rem;
-  font-weight: 700;
-  color: var(--gold-400);
-  line-height: 1.1;
-  margin-bottom: 0.4rem;
-}
-
-.stat-card-label {
-  font-size: 0.88rem;
-  color: rgba(255, 255, 255, 0.85);
-  font-weight: 500;
 }
 
 /* ==========================================================================
