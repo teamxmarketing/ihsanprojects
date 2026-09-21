@@ -267,6 +267,20 @@ img {
   object-fit: contain;
   display: block;
   background: #FDFDFD;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 7%, black 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 7%, black 100%);
+}
+
+/* Weiche Randentschärfung am oberen Rand (beseitigt Kanten & Cut-Offs des Video-Glows) */
+.hero-video-top-fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  background: linear-gradient(180deg, #FDFDFD 0%, rgba(253, 253, 253, 0.9) 45%, transparent 100%);
+  pointer-events: none;
+  z-index: 6;
 }
 
 /* Gradient Fade into Blue wie auf X-Marketing */
